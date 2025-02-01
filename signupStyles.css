@@ -1,5 +1,10 @@
 body {
   background-color: #f4f4f4;
+  /* text-decoration: none; */
+}
+
+body > a{
+    text-decoration: none;
 }
 .container {
   font-family: Arial, sans-serif;
@@ -27,11 +32,9 @@ body {
   justify-content: center;
 }
 
-.logo {
+.logo{
   display: flex;
-  /* align-items: center; */
   gap: 0.5rem;
-  /* justify-content: center; */
   font-family: Arial, sans-serif;
   margin: 20px;
 }
