@@ -35,8 +35,29 @@
 
         <nav>
           <!-- nav items -->
+          <a href="#" class="nav-item active" onclick="loadContent('home')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666666"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+            <!-- <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+              ></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg> -->
+    
+            <span>Home</span>
+          </a>
 
-          <a href="#" class="nav-item active">
+          <a href="#" class="nav-item" onclick="loadContent('attendance')">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -53,6 +74,7 @@
               <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
+          
             <span>Attendance</span>
           </a>
           <!-- <a href="#" class="nav-item">
@@ -75,7 +97,7 @@
             <span>Schedule</span>
           </a> -->
           
-          <a href="#" class="nav-item">
+          <a href="#" class="nav-item"  onclick="loadContent('report')">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -91,40 +113,25 @@
               <line x1="12" y1="20" x2="12" y2="4"></line>
               <line x1="6" y1="20" x2="6" y2="14"></line>
             </svg>
+          
             <span>Reports</span>
           </a>
-          <a href="#" class="nav-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
-              ></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>
-            <span>Settings</span>
-          </a>
+          
         </nav>
       </aside>
 
       <!-- Main Content -->
-      <main class="main-content">
+      <main class="content" id="main-content">
         <div class="header-container">
           <header>
-            <h2>Today's Attendance</h2>
+            <h2>Create Attendance</h2>
             <p>Track and manage attendance for your team</p>
+            <a href="#" onclick="loadContent('attendance')"><button type="button" class="add-btn">Create</button></a>
+           
           </header>
         </div>
 
-          <div class="container">
+          <!-- <div class="container">
             <div class="add-participant">
                 <input type="text" id="new-participant" placeholder="Enter Name">
                 <button class="add-btn" onclick="addParticipant()">Add Participant</button>
@@ -143,7 +150,7 @@
                     
                 </tbody>
             </table>
-        </div>
+        </div> -->
         
         <script>
             let participantCount = 0;
@@ -184,6 +191,82 @@
                     timeOutCell.innerText = timeString;
                 }
             }
+            function loadContent(page) {
+            const content = {
+                attendance: `<div class="header-container">
+          <header>
+            <h2>Today's Attendance</h2>
+            <p>Track and manage attendance for your team</p>
+          </header>
+        </div>
+        <div class="container">
+            <div class="add-participant">
+                <input type="text" id="new-participant" placeholder="Enter Name">
+                <button class="add-btn" onclick="addParticipant()">Add Participant</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Time In</th>
+                        <th>Time Out</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="attendance-table">
+                    
+                </tbody>
+            </table>
+        </div>`,
+                report: `<p> <div class="container">
+        <h2>Attendance Report</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Total Participants</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="total-participants">0</td>
+                    <td id="present-count">0</td>
+                    <td id="absent-count">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="goBack()">Back to Dashboard</button>
+    </div></p>`,
+                home: `<div class="header-container">
+          <header>
+            <h2>Create Attendance</h2>
+            <p>Track and manage attendance for your team</p>
+             <a href="#" onclick="loadContent('attendance')"><button type="button" class="add-btn">Create</button></a>
+          </header>
+        </div>`
+            };
+            document.getElementById("main-content").innerHTML = content[page];
+        }
+
+        // Attendance Report script
+
+        function updateReport() {
+            const total = localStorage.getItem("totalParticipants") || 0;
+            const present = localStorage.getItem("presentCount") || 0;
+            const absent = total - present;
+            
+            document.getElementById("total-participants").innerText = total;
+            document.getElementById("present-count").innerText = present;
+            document.getElementById("absent-count").innerText = absent;
+        }
+        
+        function goBack() {
+            window.location.href = "index.html";
+        }
+        
+        updateReport();
         </script>
 
     <!-- <script src="script.js"></script> -->
