@@ -59,6 +59,10 @@
     font-weight: 500;
     transition: color 0.2s;
   }
+
+  .nav-links a:last-child{
+    color: #f0f8ff;
+  }
   
   .nav-links a:hover {
     color: rgb(208, 207, 221);
@@ -205,82 +209,7 @@
     color: rgb(75, 85, 99);
   }
   
-  /* Pricing Section */
-  .pricing {
-    padding: 6rem 2rem;
-    background-color: rgb(249, 250, 251);
-  }
-  
-  .pricing h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
-  }
-  
-  .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  
-  .pricing-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    text-align: center;
-    position: relative;
-  }
-  
-  .pricing-card.featured {
-    border: 2px solid rgb(79, 70, 229);
-    transform: scale(1.05);
-  }
-  
-  .featured-label {
-    position: absolute;
-    top: -1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgb(79, 70, 229);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-    font-weight: 500;
-  }
-  
-  .pricing-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  .price {
-    font-size: 3rem;
-    font-weight: 700;
-    color: rgb(79, 70, 229);
-    margin-bottom: 2rem;
-  }
-  
-  .price span {
-    font-size: 1.25rem;
-    color: rgb(75, 85, 99);
-  }
-  
-  .pricing-card ul {
-    list-style: none;
-    margin-bottom: 2rem;
-  }
-  
-  .pricing-card li {
-    padding: 0.5rem 0;
-    color: rgb(75, 85, 99);
-  }
-  
+
   /* Contact Section */
   .contact {
     padding: 6rem 2rem;
@@ -380,20 +309,20 @@
     }
   
     .nav-content {
-      flex-direction: column;
-      gap: 1rem;
+      flex-direction: row;
+      gap: 0.5em;
       text-align: center;
     }
   
     .nav-links {
-      flex-direction: column;
+      flex-direction: row;
     }
   
     .contact-form {
       flex-direction: column;
     }
   
-    .pricing-card.featured {
-      transform: none;
+    .footer-content{
+      display: flex;
     }
   }

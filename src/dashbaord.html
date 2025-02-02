@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivy-dashboard</title>
+  <link rel="stylesheet" href="/src/dashboard.css" />
+</head>
+
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <h1>Trivy</h1>
+        </a>
+      </div>
+
+      <nav>
+        <!-- nav items -->
+        <a href="#" class="nav-item active" onclick="loadContent('home')">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#666666">
+            <path
+              d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+          </svg>
+
+          <span>Home</span>
+        </a>
+
+        <a href="#" class="nav-item" onclick="loadContent('attendance')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+
+          <span>Attendance</span>
+        </a>
+
+
+        <a href="#" class="nav-item" onclick="loadContent('report')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+
+          <span>Reports</span>
+        </a>
+
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content" id="main-content">
+      <div class="header-container">
+        <header>
+          <h2>Create Attendance</h2>
+          <p>Track and manage attendance for your School</p>
+          <a href="#" onclick="loadContent('attendance')"><button type="button" class="add-btn">Create</button></a>
+
+        </header>
+      </div>
+
+      <!-- <div class="container">
+            <div class="add-participant">
+                <input type="text" id="new-participant" placeholder="Enter Name">
+                <button class="add-btn" onclick="addParticipant()">Add Participant</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Time In</th>
+                        <th>Time Out</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="attendance-table">
+                    
+                </tbody>
+            </table>
+        </div> -->
+
+      
+
+      <script src="/script.js"></script>
+</body>
+
+</html>

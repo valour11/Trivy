@@ -26,34 +26,15 @@ th {
     background-color: #007bff;
     color: white;
 }
-.mark-btn {
-    padding: 5px 10px;
-    background-color: #28a745;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.mark-btn:hover {
-    background-color: #218838;
-}
-.add-participant {
+.back-btn {
+    display: inline-block;
     margin-top: 20px;
-}
-.add-participant input {
-    padding: 8px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.add-btn {
-    padding: 8px 12px;
+    padding: 10px 15px;
     background-color: #007bff;
-    border: none;
     color: white;
-    cursor: pointer;
+    text-decoration: none;
     border-radius: 5px;
 }
-.add-btn:hover {
+.back-btn:hover {
     background-color: #0056b3;
 }
