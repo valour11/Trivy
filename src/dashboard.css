@@ -7,7 +7,7 @@
   }
   
   body {
-    background-color: rgb(249, 250, 251);
+    background-color: #f9fafb;
     color: rgb(17, 24, 39);
     line-height: 1.5;
     background-color: #f4f4f4;
@@ -25,7 +25,7 @@
   .sidebar {
     width: 256px;
     background-color: white;
-    border-right: 1px solid rgb(229, 231, 235);
+    border-right: 1px solid #e5e7eb;
     padding: 1.5rem;
   }
   
@@ -40,7 +40,7 @@
   .logo-icon {
     width: 2rem;
     height: 2rem;
-    color: rgb(79, 70, 229);
+    color: #4f46e5;
   }
   
   .logo h1 {
@@ -67,7 +67,9 @@
   }
   
   .nav-item:hover {
-    background-color: rgb(243, 244, 246);
+    /* background-color: rgb(243, 244, 246); */
+    background-color: rgb(101, 88, 239);
+    color: whitesmoke;
   }
   
   .nav-item.active {
@@ -77,12 +79,13 @@
 
 /* main content */
 
-  /* body {
+  body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     text-align: center;
     margin: 20px;
-} */
+}
+
 .header-container {
     background: white;
     padding: 20px;
@@ -112,10 +115,7 @@ td {
   color: rgb(75, 85, 99);
   border-top: 1px solid rgb(229, 231, 235);
 }
-/* th {
-    background-color: #007bff;
-    color: white;
-} */
+
 .mark-btn {
   margin-top: 5px;
     padding: 5px 10px;
